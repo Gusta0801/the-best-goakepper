@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Futebol Inclusivo Dinâmico</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1 id="site-title">⚽ Futebol Inclusivo</h1>
+        <nav aria-label="Menu principal">
+            <ul>
+                <li><a href="#sobre" accesskey="s">Sobre</a></li>
+                <li><a href="#historia" accesskey="h">História</a></li>
+                <li><a href="#regras" accesskey="r">Regras</a></li>
+                <li><a href="#noticias" accesskey="n">Notícias</a></li>
+                <li><a href="#galeria" accesskey="g">Galeria</a></li>
+                <li><a href="#curiosidades" accesskey="c">Curiosidades</a></li>
+                <li><a href="#contato" accesskey="t">Contato</a></li>
+            </ul>
+        </nav>
+        <div class="acessibilidade">
+            <button id="aumentarFonte" aria-label="Aumentar fonte">A+</button>
+            <button id="diminuirFonte" aria-label="Diminuir fonte">A-</button>
+            <button id="altoContraste" aria-label="Alternar alto contraste">🌓</button>
+        </div>
+        <div id="alerta" aria-live="polite" class="sr-only"></div>
+    </header>
+
+    <main>
+        <!-- Sobre -->
+        <section id="sobre">
+            <h2>Sobre Futebol Inclusivo</h2>
+            <p>Este site foi criado para trazer conteúdo sobre futebol de forma acessível a todas as pessoas, incluindo pessoas com deficiência. Aqui você encontrará informações, curiosidades, imagens e notícias sobre o esporte mais popular do mundo.</p>
+        </section>
+
+        <!-- História -->
+        <section id="historia">
+            <h2>História do Futebol</h2>
+            <p>O futebol moderno surgiu na Inglaterra no século XIX, mas jogos com bola existem há milhares de anos em diversas culturas. O esporte se espalhou rapidamente e se tornou popular mundialmente.</p>
+            <p>Em 1904, foi fundada a FIFA, a entidade que organiza competições internacionais, incluindo a Copa do Mundo desde 1930. O futebol se tornou uma das maiores paixões globais, sendo um símbolo de união e emoção.</p>
+        </section>
+
+        <!-- Regras -->
+        <section id="regras">
+            <h2>Regras Básicas do Futebol</h2>
+            <ul>
+                <li>Dois times com 11 jogadores cada.</li>
+                <li>O objetivo é marcar gols no time adversário.</li>
+                <li>O jogo tem dois tempos de 45 minutos cada.</li>
+                <li>Não é permitido tocar a bola com as mãos, exceto pelo goleiro.</li>
+                <li>Faltas e impedimentos são aplicados para manter o jogo justo.</li>
+            </ul>
+        </section>
+
+        <!-- Notícias -->
+        <section id="noticias">
+            <h2>Notícias Recentes</h2>
+            <article>
+                <h3>Campeonato Inclusivo 2025</h3>
+                <p>Equipes adaptadas se enfrentam em um campeonato emocionante. Todos podem participar!</p>
+            </article>
+            <article>
+                <h3>Tecnologia Assistiva no Futebol</h3>
+                <p>Novos recursos permitem que pessoas com deficiência visual ou auditiva acompanhem os jogos com mais autonomia.</p>
+            </article>
+        </section>
+
+        <!-- Galeria -->
+        <section id="galeria">
+            <h2>Galeria de Futebol</h2>
+            <div class="slideshow">
+                <img src="img/2025-05-03T233740Z_1130132185_UP1EL531TMQH6_RTRMADP_3_SOCCER-BRAZIL-COR-INT.webp" alt="2025-05-03T233740Z_1130132185_UP1EL531TMQH6_RTRMADP_3_SOCCER-BRAZIL-COR-INT.webp" class="slide">
+                <img src="images.jpeg" alt="Bola de futebol na grama" class="slide">
+                <img src="yuri-alberto-do-corinthians-comemora-seu-gol-durante-partida-contra-o-cuiaba-no-brasileirao-1664674481334_v2_1920x1279.jpg" alt="Crianças jogando futebol adaptado" class="slide">
+            </div>
+            <button id="prevSlide" aria-label="Slide anterior">⬅️</button>
+            <button id="nextSlide" aria-label="Próximo slide">➡️</button>
+        </section>
+
+        <!-- Curiosidades -->
+        <section id="curiosidades">
+            <h2>Curiosidades sobre Futebol</h2>
+            <ul>
+                <li>O maior artilheiro da história do futebol é Pelé, com mais de 1.200 gols em toda a carreira.</li>
+                <li>O maior público registrado em um jogo de futebol foi de 199.854 pessoas na final da Copa do Mundo de 1950, no Maracanã.</li>
+                <li>O futebol é praticado em todos os continentes, incluindo a Antártida!</li>
+                <li>Existem modalidades adaptadas do futebol para pessoas com deficiência visual, auditiva e física.</li>
+            </ul>
+        </section>
+
+        <!-- Contato -->
+        <section id="contato">
+            <h2>Contato</h2>
+            <form>
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="mensagem">Mensagem:</label>
+                <textarea id="mensagem" name="mensagem" required></textarea>
+
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Futebol Inclusivo. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
